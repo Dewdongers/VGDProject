@@ -2,52 +2,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
 
 
     public GameObject p;
+    public Rigidbody2D rb;
+    private Vector2 MoveVelocity;
     public int speed;
-    private Vector3 move = new Vector3(0,0,0);
 
     // Use this for initialization
-    void Start () {	
-	}
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
 
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         Aim();
         Move();
-	}
+    }
 
-    void Aim() {
-        Vector3 aimDir = Input.mousePosition;
-        p.transform.eulerAngles = new Vector3(0 , 0, (Mathf.Atan(aimDir.y / aimDir.x)/Mathf.PI)*180);
+    void Aim()
+    {
+
     }
     void Move()
     {
+        Vector2 mvinp = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        MoveVelocity = mvinp.normalized * speed;
+    }
 
-        if(Input.GetKeyDown("a")) {
-            move.x -= speed;
-        }
-
-        if (Input.GetKeyDown("d"))
-        {
-            move.x += speed;
-        }
-
-
-        if (Input.GetKeyDown("w"))
-        {
-            move.y += speed;
-        }
-
-        if (Input.GetKeyDown("s"))
-        {
-            move.y -= speed;
-        }
-        p.transform.localPosition = move;
+    void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + MoveVelocity * Time.fixedDeltaTime);
     }
 }
 
