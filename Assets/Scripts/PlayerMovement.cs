@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     private Vector2 MoveVelocity;
     public int speed;
+    private float angle;
+    private Vector3 mp, op;
 
     // Use this for initialization
     void Start()
@@ -28,7 +30,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Aim()
     {
-
+        mp = Input.mousePosition;
+        mp.z = 5.23f; //The distance between the camera and object
+        op = Camera.main.WorldToScreenPoint(rb.position);
+        mp.x = mp.x - op.x;
+        mp.y = mp.y - op.y;
+        angle = Mathf.Atan2(mp.y, mp.x) * Mathf.Rad2Deg - 90;
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
     void Move()
     {
