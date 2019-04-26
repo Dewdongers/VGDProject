@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{0EC745F0-4621-FE0F-C962-583EB90AE791}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CamDolly.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Controller.cs">
     <Files>
       <File FileName="Assets/Scripts/PlayerMovement.cs" Line="35" Column="58" />
-      <File FileName="Assets/Scripts/CamDolly.cs" Line="11" Column="42" />
+      <File FileName="Assets/Scripts/Follow.cs" Line="14" Column="1" />
+      <File FileName="Assets/Scripts/Controller.cs" Line="10" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
