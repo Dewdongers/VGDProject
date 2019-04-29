@@ -152,6 +152,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1571663318939122, guid: 3101fb06d05514671b6d3030fccbedf0, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3101fb06d05514671b6d3030fccbedf0, type: 2}
   m_IsPrefabAsset: 0
@@ -242,13 +246,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 164281521}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0.02, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1830024707}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1001 &252979304
 Prefab:
   m_ObjectHideFlags: 0
@@ -295,6 +299,10 @@ Prefab:
     - target: {fileID: 4802203372956344, guid: 3101fb06d05514671b6d3030fccbedf0, type: 2}
       propertyPath: m_LocalScale.y
       value: 1.6281044
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571663318939122, guid: 3101fb06d05514671b6d3030fccbedf0, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3101fb06d05514671b6d3030fccbedf0, type: 2}
@@ -435,6 +443,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: -6.7326026
       objectReference: {fileID: 0}
+    - target: {fileID: 1571663318939122, guid: 3101fb06d05514671b6d3030fccbedf0, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3101fb06d05514671b6d3030fccbedf0, type: 2}
   m_IsPrefabAsset: 0
@@ -568,7 +580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 519420034}
-  target: {fileID: 1830024709}
+  target: {fileID: 0}
 --- !u!4 &569286370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4802203372956344, guid: 3101fb06d05514671b6d3030fccbedf0,
@@ -620,6 +632,10 @@ Prefab:
     - target: {fileID: 4802203372956344, guid: 3101fb06d05514671b6d3030fccbedf0, type: 2}
       propertyPath: m_LocalScale.y
       value: -0.088651106
+      objectReference: {fileID: 0}
+    - target: {fileID: 1571663318939122, guid: 3101fb06d05514671b6d3030fccbedf0, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3101fb06d05514671b6d3030fccbedf0, type: 2}
@@ -685,6 +701,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: -9.779842
       objectReference: {fileID: 0}
+    - target: {fileID: 1571663318939122, guid: 3101fb06d05514671b6d3030fccbedf0, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3101fb06d05514671b6d3030fccbedf0, type: 2}
   m_IsPrefabAsset: 0
@@ -697,8 +717,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1830024707}
   - component: {fileID: 1830024706}
-  - component: {fileID: 1830024709}
   - component: {fileID: 1830024708}
+  - component: {fileID: 1830024709}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -774,12 +794,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1830024705}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c963cda02f0684da9bde147341e053e8, type: 3}
+  m_Script: {fileID: 11500000, guid: d276aa3592ff844508d23d66d9605367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p: {fileID: 1830024705}
-  rb: {fileID: 1830024709}
-  speed: 5
+  moveSpeed: 6
 --- !u!50 &1830024709
 Rigidbody2D:
   serializedVersion: 4
@@ -787,14 +805,14 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1830024705}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
