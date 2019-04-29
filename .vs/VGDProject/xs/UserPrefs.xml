@@ -4,7 +4,7 @@
     <Files>
       <File FileName="Assets/Scripts/PlayerMovement.cs" Line="35" Column="58" />
       <File FileName="Assets/Scripts/Follow.cs" Line="14" Column="1" />
-      <File FileName="Assets/Scripts/Controller.cs" Line="10" Column="9" />
+      <File FileName="Assets/Scripts/Controller.cs" Line="24" Column="50" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
