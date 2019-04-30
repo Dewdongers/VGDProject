@@ -11,7 +11,6 @@ public class CamFollow : MonoBehaviour
     private void Update()
     {
         var mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
         transform.rotation = Quaternion.LookRotation(Vector3.forward, (mouseWorldPosition - transform.position).normalized);
     }
     #endregion
