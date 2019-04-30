@@ -580,7 +580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 519420034}
-  target: {fileID: 0}
+  target: {fileID: 1830024709}
 --- !u!4 &569286370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4802203372956344, guid: 3101fb06d05514671b6d3030fccbedf0,
