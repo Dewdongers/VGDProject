@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TreeGen : MonoBehaviour {
-
-    System.Random rng = new System.Random();
+    private readonly System.Random rng = new System.Random();
     public GameObject tree;
     public int Density;
     public float x1;

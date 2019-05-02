@@ -7,6 +7,8 @@ public class FieldOfView : MonoBehaviour
     [Range(0, 360)]
     public float viewAngle;
 
+    public Rigidbody2D rb;
+
     public LayerMask obstacleMask;
     public MeshFilter viewMeshFilter;
 
@@ -34,7 +36,7 @@ public class FieldOfView : MonoBehaviour
         ViewCastInfo oldViewCast = new ViewCastInfo();
         for (int i = 0; i <= stepCount; i++)
         {
-            float angle = -transform.eulerAngles.z - viewAngle / 2 + stepAngleSize * i;
+            float angle = -rb.transform.eulerAngles.z - viewAngle / 2 + stepAngleSize * i;
             ViewCastInfo newViewCast = ViewCast(angle);
 
             if (i > 0)
@@ -110,10 +112,9 @@ public class FieldOfView : MonoBehaviour
         Vector3 dir = DirFromAngle(globalAngle);
         var hit = Physics2D.Raycast(transform.position, dir, viewRadius, obstacleMask);
 
-        if (hit)
-            return new ViewCastInfo(true, hit.point, hit.distance, globalAngle);
-
-        return new ViewCastInfo(false, transform.position + dir * viewRadius, viewRadius, globalAngle);
+        return hit
+            ? new ViewCastInfo(true, hit.point, hit.distance, globalAngle)
+            : new ViewCastInfo(false, transform.position + dir * viewRadius, viewRadius, globalAngle);
     }
 
     public Vector3 DirFromAngle(float angleInDegrees)

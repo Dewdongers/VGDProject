@@ -61,7 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Editor\FieldOfViewEditor.cs" />
+    <Compile Include="Assets\Editor\FieldOfViewEditor copy.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/201250/Documents/GitHub/VGDProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
