@@ -808,8 +808,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35110a850e5f848c1965107d32c33c6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewRadius: 10
-  viewAngle: 96
+  viewRadius: 5
+  viewAngle: 30
   rb: {fileID: 1830024709}
   obstacleMask:
     serializedVersion: 2

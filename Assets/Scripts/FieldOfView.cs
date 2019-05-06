@@ -20,6 +20,7 @@ public class FieldOfView : MonoBehaviour
     Mesh viewMesh;
     List<Vector3> viewPoints = new List<Vector3>();
     Vector3 edgeMinPoint, edgeMaxPoint;
+    Vector3 offset = Vector3.forward * Mathf.PI / 2;
 
     void Start()
     {
@@ -109,7 +110,7 @@ public class FieldOfView : MonoBehaviour
 
     ViewCastInfo ViewCast(float globalAngle)
     {
-        Vector3 dir = DirFromAngle(globalAngle);
+        Vector3 dir = -DirFromAngle(globalAngle) + offset;
         var hit = Physics2D.Raycast(transform.position, dir, viewRadius, obstacleMask);
 
         return hit
