@@ -6,8 +6,14 @@ public class Trunk : MonoBehaviour {
 
     public GameObject tree;
     public GameObject trunk;
+    public int treeSize;
 
     void Start () {
-        trunk.transform.localScale = tree.transform.localScale;
-	}
+        if (tree.transform.localScale.x > treeSize)
+        {
+            GameObject t = Instantiate(trunk);
+            t.transform.localScale = tree.transform.localScale;
+            t.transform.position = tree.transform.position;
+        }
+    }
 }

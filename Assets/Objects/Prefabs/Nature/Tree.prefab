@@ -70,7 +70,7 @@ CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1623122254427274}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 5273b5e3f45f646eeadc5a7185eff713, type: 2}
   m_IsTrigger: 0
@@ -92,6 +92,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tree: {fileID: 1623122254427274}
   trunk: {fileID: 1677708480269292, guid: 6f60bfebf2b12494198fa4dd7f720ce9, type: 2}
+  treeSize: 6
 --- !u!114 &114415483695899266
 MonoBehaviour:
   m_ObjectHideFlags: 1
