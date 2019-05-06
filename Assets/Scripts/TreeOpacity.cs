@@ -29,6 +29,13 @@ public class TreeOpacity : MonoBehaviour
         distx = rb.position.x - tree.GetComponent<Rigidbody2D>().position.x;
         disty = rb.position.y - tree.GetComponent<Rigidbody2D>().position.y;
         dist = Mathf.Sqrt(Mathf.Pow(distx,2)+Mathf.Pow(disty,2));
-        rend.material.color = new Color(1.0f, 1.0f, 1.0f, dist);
+        float distB = dist / 10;
+        if (distB > MaxOpacity) {
+            distB = MaxOpacity;
+        } 
+        if (distB < MinOpacity) {
+            distB = MinOpacity;
+        }
+        rend.material.color = new Color(1.0f, 1.0f, 1.0f, distB);
     }
 }

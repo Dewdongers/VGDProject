@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 212398045406895432}
   - component: {fileID: 58555187780879104}
   - component: {fileID: 50699358266240184}
+  - component: {fileID: 114415483695899266}
+  - component: {fileID: 114240473388638178}
   m_Layer: 10
   m_Name: Tree
   m_TagString: Untagged
@@ -77,6 +79,33 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.28
+--- !u!114 &114240473388638178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1623122254427274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08d918d78b4fd41ee853c7957b0e0167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tree: {fileID: 1623122254427274}
+  trunk: {fileID: 1677708480269292, guid: 6f60bfebf2b12494198fa4dd7f720ce9, type: 2}
+--- !u!114 &114415483695899266
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1623122254427274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 521fbb38c921b4fb78f4fb2f789eab48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxOpacity: 1
+  MinOpacity: 0.3
+  tree: {fileID: 1623122254427274}
 --- !u!212 &212398045406895432
 SpriteRenderer:
   m_ObjectHideFlags: 1
