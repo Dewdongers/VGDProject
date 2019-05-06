@@ -4,11 +4,11 @@
     <Files>
       <File FileName="Assets/Scripts/Controller.cs" Line="26" Column="1" />
       <File FileName="Assets/Scripts/FollowPlayer.cs" Line="13" Column="6" />
-      <File FileName="Assets/Scripts/TreeGen.cs" Line="14" Column="5" />
+      <File FileName="Assets/Scripts/TreeGen.cs" Line="14" Column="1" />
       <File FileName="Assets/Scripts/FieldOfView.cs" Line="120" Column="52" />
-      <File FileName="Assets/Editor/FieldOfViewEditor copy.cs" Line="20" Column="9" />
+      <File FileName="Assets/Editor/FieldOfViewEditor copy.cs" Line="20" Column="1" />
       <File FileName="Assets/Scripts/GUIWrapper.cs" Line="20" Column="6" />
-      <File FileName="Assets/Scripts/TreeOpacity.cs" Line="15" Column="5" />
+      <File FileName="Assets/Scripts/TreeOpacity.cs" Line="27" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

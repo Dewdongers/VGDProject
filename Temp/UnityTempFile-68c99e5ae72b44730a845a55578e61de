@@ -190,10 +190,11 @@
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
+-define:UNITY_PRO_LICENSE
 'Assets/Scripts/Controller.cs'
 'Assets/Scripts/FieldOfView.cs'
 'Assets/Scripts/FollowPlayer.cs'
 'Assets/Scripts/GUIWrapper.cs'
 'Assets/Scripts/TreeGen.cs'
-'Assets/TreeOpacity.cs'
+'Assets/Scripts/TreeOpacity.cs'
 -lib:'/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity'
