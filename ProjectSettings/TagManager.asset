@@ -13,10 +13,10 @@ TagManager:
   - UI
   - 
   - 
-  - Background
-  - Playfield
-  - Foreground
-  - wall
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -40,13 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Background
-    uniqueID: 2472134517
-    locked: 0
-  - name: Playfield
-    uniqueID: 953464375
-    locked: 0
-  - name: Foreground
-    uniqueID: 8092105
     locked: 0

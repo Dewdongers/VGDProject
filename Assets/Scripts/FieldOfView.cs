@@ -16,8 +16,8 @@ public class FieldOfView : MonoBehaviour
     public float maskCutawayDst = .1f;
 
     Mesh viewMesh;
-    List<Vector3> viewPoints = new List<Vector3>();
-    Vector3 edgeMinPoint, edgeMaxPoint;
+    List<Vector2> viewPoints = new List<Vector2>();
+    Vector2 edgeMinPoint, edgeMaxPoint;
 
     void Start()
     {
@@ -43,9 +43,9 @@ public class FieldOfView : MonoBehaviour
                 if (oldViewCast.hit != newViewCast.hit || (oldViewCast.hit && newViewCast.hit && edgeDstThresholdExceeded))
                 {
                     FindEdge(oldViewCast, newViewCast, out edgeMinPoint, out edgeMaxPoint);
-                    if (edgeMinPoint != Vector3.zero)
+                    if (edgeMinPoint != Vector2.zero)
                         viewPoints.Add(edgeMinPoint);
-                    if (edgeMaxPoint != Vector3.zero)
+                    if (edgeMaxPoint != Vector2.zero)
                         viewPoints.Add(edgeMaxPoint);
                 }
 
@@ -56,10 +56,10 @@ public class FieldOfView : MonoBehaviour
         }
 
         int vertexCount = viewPoints.Count + 1;
-        Vector3[] vertices = new Vector3[vertexCount];
+        Vector2[] vertices = new Vector2[vertexCount];
         int[] triangles = new int[(vertexCount - 2) * 3];
 
-        vertices[0] = Vector3.zero;
+        vertices[0] = Vector2.zero;
         for (int i = 0; i < vertexCount - 1; i++)
         {
             vertices[i + 1] = transform.InverseTransformPoint(viewPoints[i]) + Vector3.up * maskCutawayDst;
@@ -79,12 +79,12 @@ public class FieldOfView : MonoBehaviour
         viewMesh.RecalculateNormals();
     }
 
-    void FindEdge(ViewCastInfo minViewCast, ViewCastInfo maxViewCast, out Vector3 minPoint, out Vector3 maxPoint)
+    void FindEdge(ViewCastInfo minViewCast, ViewCastInfo maxViewCast, out Vector2 minPoint, out Vector2 maxPoint)
     {
         float minAngle = minViewCast.angle;
         float maxAngle = maxViewCast.angle;
-        minPoint = Vector3.zero;
-        maxPoint = Vector3.zero;
+        minPoint = Vector2.zero;
+        maxPoint = Vector2.zero;
 
         for (int i = 0; i < edgeResolveIterations; i++)
         {
@@ -107,13 +107,13 @@ public class FieldOfView : MonoBehaviour
 
     ViewCastInfo ViewCast(float globalAngle)
     {
-        Vector3 dir = DirFromAngle(globalAngle);
+        Vector2 dir = DirFromAngle(globalAngle);
         var hit = Physics2D.Raycast(transform.position, dir, viewRadius, obstacleMask);
 
         if (hit)
             return new ViewCastInfo(true, hit.point, hit.distance, globalAngle);
 
-        return new ViewCastInfo(false, transform.position + dir * viewRadius, viewRadius, globalAngle);
+        return new ViewCastInfo(false, transform.position + dir) * viewRadius, viewRadius, globalAngle);
     }
 
     public Vector3 DirFromAngle(float angleInDegrees)
@@ -128,12 +128,12 @@ public class FieldOfView : MonoBehaviour
         public float dst;
         public float angle;
 
-        public ViewCastInfo(bool _hit, Vector3 _point, float _dst, float _angle)
+        public ViewCastInfo(bool hit, Vector3 point, float dst, float angle)
         {
-            hit = _hit;
-            point = _point;
-            dst = _dst;
-            angle = _angle;
+            this.hit = hit;
+            this.point = point;
+            this.dst = dst;
+            this.angle = angle;
         }
     }
 }
