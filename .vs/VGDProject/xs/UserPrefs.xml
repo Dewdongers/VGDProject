@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{0EC745F0-4621-FE0F-C962-583EB90AE791}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FieldOfView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Trunk.cs">
     <Files>
-      <File FileName="Assets/Scripts/Controller.cs" Line="26" Column="1" />
+      <File FileName="Assets/Scripts/Controller.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/FollowPlayer.cs" Line="13" Column="6" />
-      <File FileName="Assets/Scripts/TreeGen.cs" Line="14" Column="1" />
-      <File FileName="Assets/Scripts/FieldOfView.cs" Line="29" Column="1" />
-      <File FileName="Assets/Editor/FieldOfViewEditor copy.cs" Line="20" Column="1" />
+      <File FileName="Assets/Scripts/TreeGen.cs" Line="4" Column="1" />
+      <File FileName="Assets/Scripts/FieldOfView.cs" Line="1" Column="1" />
+      <File FileName="Assets/Editor/FieldOfViewEditor copy.cs" Line="31" Column="1" />
       <File FileName="Assets/Scripts/GUIWrapper.cs" Line="20" Column="6" />
       <File FileName="Assets/Scripts/TreeOpacity.cs" Line="42" Column="1" />
-      <File FileName="Assets/Scripts/Trunk.cs" Line="10" Column="1" />
+      <File FileName="Assets/Scripts/Trunk.cs" Line="16" Column="60" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

@@ -14,6 +14,7 @@ public class Trunk : MonoBehaviour {
             GameObject t = Instantiate(trunk);
             t.transform.localScale = tree.transform.localScale;
             t.transform.position = tree.transform.position;
+            t.transform.parent = transform;
         }
     }
 }
