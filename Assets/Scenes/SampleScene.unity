@@ -360,6 +360,7 @@ GameObject:
   - component: {fileID: 441443483}
   - component: {fileID: 441443485}
   - component: {fileID: 441443484}
+  - component: {fileID: 441443486}
   m_Layer: 10
   m_Name: Trees
   m_TagString: Untagged
@@ -386,7 +387,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 441443481}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76402343564164c7f82eb8715af0fec2, type: 3}
   m_Name: 
@@ -403,7 +404,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 441443481}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76402343564164c7f82eb8715af0fec2, type: 3}
   m_Name: 
@@ -420,7 +421,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 441443481}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76402343564164c7f82eb8715af0fec2, type: 3}
   m_Name: 
@@ -431,6 +432,26 @@ MonoBehaviour:
   y1: 5
   x2: 96
   y2: 54
+--- !u!114 &441443486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 441443481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3607bf60d88c94cc7bc4c2d2d5ce42ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objs:
+  - {fileID: 1623122254427274, guid: 16d3ed2c4e2424ed992f03db8c8779f6, type: 2}
+  Density: 5
+  xMin: -96
+  yMin: 5
+  xMax: 14
+  yMax: 54
+  sizeMin: 5
+  sizeMax: 16
 --- !u!1 &498506419
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +460,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 498506420}
+  - component: {fileID: 498506421}
   m_Layer: 0
   m_Name: Zombies
   m_TagString: Untagged
@@ -459,6 +481,29 @@ Transform:
   m_Father: {fileID: 65472002}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &498506421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 498506419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3607bf60d88c94cc7bc4c2d2d5ce42ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objs:
+  - {fileID: 1904622721652466, guid: 3470b53df35504d608af1ebef169ea34, type: 2}
+  - {fileID: 1297423629480660, guid: f2e452c25c0b8491282f5cd9d4236e04, type: 2}
+  - {fileID: 1023530327709572, guid: e2fc6380586f34d158286bae1860f0bb, type: 2}
+  - {fileID: 1297208667293002, guid: c0d49f263f60b4118b285e2b6d94f3e7, type: 2}
+  Density: 2
+  xMin: -95
+  yMin: -55
+  xMax: 95
+  yMax: 55
+  sizeMin: 4
+  sizeMax: 4
 --- !u!1 &501697133
 GameObject:
   m_ObjectHideFlags: 0

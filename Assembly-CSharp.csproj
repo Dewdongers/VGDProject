@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\FieldOfView.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\GUIWrapper.cs" />
+    <Compile Include="Assets\Scripts\Populate.cs" />
     <Compile Include="Assets\Scripts\TreeGen.cs" />
     <Compile Include="Assets\Scripts\TreeOpacity.cs" />
     <Compile Include="Assets\Scripts\Trunk.cs" />
