@@ -5,14 +5,17 @@ using UnityEngine;
 public class Populate : MonoBehaviour {
 
     private readonly System.Random rng = new System.Random();
+
     public GameObject[] objs;
+
     public int Density;
+    public float sizeMin;
+    public float sizeMax;
+
     public float xMin;
     public float yMin;
     public float xMax;
     public float yMax;
-    public float sizeMin;
-    public float sizeMax;
 
     void Start()
     {

@@ -15,8 +15,8 @@ TagManager:
   - 
   - Background
   - Playfield
-  - Foreground
-  - wall
+  - Entites
+  - ForeGround
   - 
   - 
   - 
@@ -46,6 +46,9 @@ TagManager:
     locked: 0
   - name: Playfield
     uniqueID: 953464375
+    locked: 0
+  - name: Entites
+    uniqueID: 389125757
     locked: 0
   - name: Foreground
     uniqueID: 8092105
