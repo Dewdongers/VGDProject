@@ -20,10 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4020833568906834}
   - component: {fileID: 212236133062520750}
-  - component: {fileID: 114762605363156194}
+  - component: {fileID: 114753451514253188}
   m_Layer: 0
   m_Name: Zombies1_3
-  m_TagString: Untagged
+  m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,7 +41,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114762605363156194
+--- !u!114 &114753451514253188
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
