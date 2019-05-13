@@ -153,6 +153,7 @@ GameObject:
   - component: {fileID: 164281524}
   - component: {fileID: 164281523}
   - component: {fileID: 164281522}
+  - component: {fileID: 164281525}
   m_Layer: 10
   m_Name: mzfsh
   m_TagString: Untagged
@@ -237,6 +238,20 @@ Transform:
   m_Father: {fileID: 1830024707}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &164281525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 164281521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af8f45be39524a9091e14df7bc98a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  range: 100
+  fpsCam: {fileID: 519420031}
 --- !u!1 &327537497
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,12 +409,12 @@ MonoBehaviour:
   objs:
   - {fileID: 1623122254427274, guid: 16d3ed2c4e2424ed992f03db8c8779f6, type: 2}
   Density: 5
+  sizeMin: 5
+  sizeMax: 16
   xMin: -96
   yMin: -52
   xMax: 104
   yMax: -42
-  sizeMin: 5
-  sizeMax: 16
 --- !u!114 &441443484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,12 +429,12 @@ MonoBehaviour:
   objs:
   - {fileID: 1623122254427274, guid: 16d3ed2c4e2424ed992f03db8c8779f6, type: 2}
   Density: 5
+  sizeMin: 5
+  sizeMax: 16
   xMin: 44
   yMin: 2
   xMax: 104
   yMax: 54
-  sizeMin: 5
-  sizeMax: 16
 --- !u!114 &441443486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,12 +449,12 @@ MonoBehaviour:
   objs:
   - {fileID: 1623122254427274, guid: 16d3ed2c4e2424ed992f03db8c8779f6, type: 2}
   Density: 5
+  sizeMin: 5
+  sizeMax: 16
   xMin: -96
   yMin: 5
   xMax: 14
   yMax: 54
-  sizeMin: 5
-  sizeMax: 16
 --- !u!1 &498506419
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,9 +984,9 @@ MonoBehaviour:
   - {fileID: 1023530327709572, guid: e2fc6380586f34d158286bae1860f0bb, type: 2}
   - {fileID: 1297208667293002, guid: c0d49f263f60b4118b285e2b6d94f3e7, type: 2}
   Density: 2
+  sizeMin: 4
+  sizeMax: 4
   xMin: -95
   yMin: -55
   xMax: 95
   yMax: 55
-  sizeMin: 4
-  sizeMax: 4
