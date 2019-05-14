@@ -13,6 +13,7 @@ public class AI : MonoBehaviour {
     }
 
     void Update () {
+
         Targ.x = transform.position.x - Player.transform.position.x;
         Targ.y = transform.position.y - Player.transform.position.y;
         transform.rotation.Set(transform.rotation.x, transform.rotation.y, Mathf.Rad2Deg*Mathf.Tan(Targ.y/Targ.x),1);

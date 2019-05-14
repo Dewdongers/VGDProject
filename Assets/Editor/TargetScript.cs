@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor (typeof (AI))]
+[CustomEditor(typeof(AI))]
 public class TargetScript : Editor
 {
     GameObject[] allObjects;
-    void OnScreenGUI()
+    void OnSceneGUI()
     {
         allObjects = UnityEngine.Object.FindObjectsOfType<GameObject>();
-        Debug.Log(allObjects.Length);
         foreach (GameObject go in allObjects)
             if (go.tag.Equals("Zombie"))
             {
-                Vector3 ang = new Vector3(go.transform.position.x * Mathf.Cos(go.transform.rotation.z) * Mathf.Rad2Deg, go.transform.position.y * Mathf.Sin(go.transform.rotation.z) * Mathf.Rad2Deg, 1);
+                Vector3 ang = go.transform.position;
+                ang.x += (Mathf.Cos(go.transform.rotation.z * Mathf.Deg2Rad) * Mathf.Rad2Deg);
+                ang.y += (Mathf.Sin(go.transform.rotation.z * Mathf.Deg2Rad) * Mathf.Rad2Deg);
                 Handles.DrawLine(go.transform.position, ang);
             }
     }

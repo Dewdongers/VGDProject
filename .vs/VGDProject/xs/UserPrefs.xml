@@ -5,13 +5,13 @@
       <File FileName="Assets/Scripts/Controller.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/FollowPlayer.cs" Line="13" Column="6" />
       <File FileName="Assets/Scripts/FieldOfView.cs" Line="1" Column="1" />
-      <File FileName="Assets/Editor/FieldOfViewEditor copy.cs" Line="31" Column="1" />
       <File FileName="Assets/Scripts/GUIWrapper.cs" Line="20" Column="6" />
       <File FileName="Assets/Scripts/TreeOpacity.cs" Line="42" Column="1" />
       <File FileName="Assets/Scripts/Trunk.cs" Line="17" Column="44" />
       <File FileName="Assets/Scripts/Populate.cs" Line="17" Column="17" />
-      <File FileName="Assets/Scripts/AI.cs" Line="16" Column="9" />
-      <File FileName="Assets/Editor/TargetScript.cs" Line="7" Column="5" />
+      <File FileName="Assets/Scripts/AI.cs" Line="16" Column="1" />
+      <File FileName="Assets/Editor/FieldOfViewEditor copy.cs" Line="5" Column="4" />
+      <File FileName="Assets/Editor/TargetScript.cs" Line="10" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
